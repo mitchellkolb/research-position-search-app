@@ -1,0 +1,40 @@
+<table class = "posttable" style = "width:100%" valign="top">
+
+            <td colspan="3"><div class="posttitle"> {{post.title}} </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%" >
+                <!--  (milestone1) TODO: include happiness-level image according to the `cost`s happiness_level .
+                For example : <img src="{{ url_for('static', filename = 'img//happiness-level-1.png' )}}"-->  
+
+            </td>
+
+            <td width="80%" >
+                <div>
+                  <!-- (milestone1) TODO: include post body --> 
+                    {{post.researchDesc}}
+               </div>
+
+
+                <div>
+                  <!-- (milestone1) TODO: include post body --> 
+                    {{post.requiredHours}} Hours a Week
+               </div>
+
+                <div>
+                    {%for fields in post.researchFields%}
+                    {{fields}}
+                    {%endfor%}
+                </div> 
+
+                <div>
+                    Posted at: {{ moment(post.timestamp).format('LLL') }}
+                </div> 
+
+                <div>
+                    The post is created by:  <span class="useritem"> {{current_user.username}} <!-- causes an error, assigns the post created by currently logged in user -->
+                    <form action="{{url_for('routes.display_selected', user_id = 3)}}" method="post"></form>
+                </div> 
+            </td> 
+</table>

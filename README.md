@@ -2,13 +2,13 @@
 <h1 align="center">Research Position Search App</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mitchellkolb/research-position-search-app?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mitchellkolb/research-position-search-app?color=003B57">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mitchellkolb/research-position-search-app?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mitchellkolb/research-position-search-app?color=003B57">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mitchellkolb/research-position-search-app?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mitchellkolb/research-position-search-app?color=003B57">
 
-  <img alt="Github stars" src="https://img.shields.io/github/stars/mitchellkolb/research-position-search-app?color=56BEB8" />
+  <img alt="Github stars" src="https://img.shields.io/github/stars/mitchellkolb/research-position-search-app?color=003B57" />
 </p>
 
 <p align="center">
@@ -16,7 +16,13 @@
     src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"
     alt="Website Badge" />
 <img
-    src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=Windows 10&logoColor=white"
+    src="https://img.shields.io/badge/Flask-0078D6?style=for-the-badge&logo=flask&logoColor=white"
+    alt="Website Badge" />
+<img
+    src="https://img.shields.io/badge/sqlite-003B57?style=for-the-badge&logo=sqlite&logoColor=white"
+    alt="Website Badge" />
+<img
+    src="https://img.shields.io/badge/selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white"
     alt="Website Badge" />
 </p>
 
@@ -27,7 +33,7 @@ This project is intended to showcase our knowledge learning about Neural Network
 <details>
 <summary style="color:#5087dd">Watch the Full Video Demo Here</summary>
 
-[![Full Video Demo Here](https://img.youtube.com/vi/VidKEY/0.jpg)](https://www.youtube.com/watch?v=VidKEY)
+[![Full Video Demo Here](https://img.youtube.com/vi/XV8JiobX_7g/0.jpg)](https://www.youtube.com/watch?v=XV8JiobX_7g)
 
 </details>
 
@@ -53,9 +59,13 @@ This project is intended to showcase our knowledge learning about Neural Network
 
 # Tools Used / Development Environment
 - Python
+- Flask
+- SQLite
+- Selenium
 - VS Code
 - Terminal
 - Windows 10
+- MacOS
 
 
 
@@ -63,18 +73,22 @@ This project is intended to showcase our knowledge learning about Neural Network
 
 # Team / Contributors / Teachers
 - [Mitchell Kolb](https://github.com/mitchellkolb)
-- [name]()
-- Professor. 
-
-
+- [Louis Kha](https://github.com/LouisKha)
+- [Albert Lipaev](https://github.com/Endeavour-Innovations-Inc)
+- Alex Castillo
+- Professor. Sakire Arslan Ay
+- Our Team Name: LAMA
 
 
 
 # How to Set Up
-This project was implemented on our local machine inside of a virtual machine using:
-- Ubuntu Version 20.04.03 found at this [link](http://lt.releases.ubuntu.com/20.04.3/).
+This project was implemented on our local machines on both windows and macOS:
 - Clone this repository 
-- Open terminal at the codebase `~.../ext2/Noah-Mitchell/`
+- Open terminal at the codebase `~.../research-position-search-app/TermProject-TeamLAMA/`
+- Use `pip install -r requirements.txt` to install all of the requirements.
+- Install SQLite
+- Run the config.py and smile.py files to start the project.
+- The codebase will startup on your localhost
 
 
 
@@ -128,5 +142,5 @@ Future improvements could include
 
 --- 
 # Acknowledgments
-This codebase and all supporting materials was made as apart of a course for my undergrad at WSU for CPTS XXX - XXX in the Spring of 2022. 
+This codebase and all supporting materials was made as apart of a course for my undergrad at WSU for CPTS 322 - Software Design and Architecture in the Fall of 2021. This project was originally submitted to a campus controlled repository as all WSU assignments are. This repository serves as a backup place to showcase this project. The original repo is [linked here.](https://github.com/WSU-CptS322-Fall2021/TermProject-TeamLAMA/tree/iteration3)
 

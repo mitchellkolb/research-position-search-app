@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Student Applying View</h1>
+
+
+<h1>You are Currently Looking at A Research Position!</h1>
+
+
+<h2>Information Below:</h2>
+
+<div class="postmessage">
+
+    <p> Title: <b> {{positions.title}} </b></p>
+    <p> Research Description: <b> {{positions.researchDesc}} </b></p>
+    <p> Research Qualifications: <b> {{positions.requiredQualifications}} </b></p>
+    <p> Required Hours: <b> {{positions.requiredHours}} </b></p>
+    <p> Start Date: <b> {{ moment(positions.startDate).format('LL') }} </b></p>
+    <p> End Date: <b> {{ moment(positions.endDate).format('LL') }} </b></p>
+    <p>
+        Research Fields: <b>
+            {%for fields in positions.researchFields%}
+            {{fields}}
+            {%endfor%}
+        </b>
+    </p>
+    <p> Posted at: <b> {{ moment(positions.timestamp).format('LLL') }} </b></p>
+    <p> The Position is created by: <b> <span class="useritem">{{positions.facultyName}} </b></p>
+    <p> The Faculty Member Contact: <b> <span class="useritem">{{positions.facultyEmail}} </b></p>
+
+    {% for apps in applicants %}
+
+    <p> Testing Student ID View: <b> {{apps.name}} </b></p>
+
+    {% endfor %}
+
+
+</div>
+
+<!-- New Form action to link to redirect route towards application page form while sending student_id information -->
+<div>
+
+        {% if appBool == 0%}
+              <form action="{{ url_for('routes.researchApply', currentResearch_id = positions.id )}}" method="get">
+                <input type="submit" value="Apply!" />
+              </form>
+
+        {% else %}
+
+        {% for appStatus in applicants %}
+
+
+        {% if current_user.id == appStatus.student_id%}
+
+        {% if appStatus.status == 0 %}
+
+        Status: PENDING
+
+        {% endif %}
+
+        {% if appStatus.status == 1 %}
+
+        Status: APPROVED FOR INTERVIEW
+
+        {% endif %}
+
+
+        {% if appStatus.status == 2 %}
+
+        Status: HIRED
+
+        {% endif %}
+
+
+        {% if appStatus.status == 3 %}
+
+        Status: REJECTED
+
+        {% endif %}
+
+        {% endif %}
+        {% endfor %}
+
+
+        
+
+        <form action="{{ url_for('routes.withdrawApply', currentResearch_id = positions.id )}}" method="get">
+          <input type="submit" value="Withdrawl Application" />
+        </form>
+
+
+
+        {% endif %}
+
+</div>
+
+{% endblock %}

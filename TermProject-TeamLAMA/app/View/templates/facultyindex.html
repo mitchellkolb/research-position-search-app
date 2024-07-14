@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Faculty Main View</h1>
+    <h1>Welcome to Faculty SearchApp Portal!</h1>
+    <h2>All Positions Created:</h2>
+
+    <!--     TODO: (milestone 2) Format posts -->
+
+
+
+                <div class="postlist">
+
+
+       {% for post in posts %} 
+               {% if post.faculty_id == current_user.id %}
+
+            <div class = "post-box">
+                {% include 'applypost.html' %} 
+            </div>
+               {% endif %}
+
+       {% endfor %}
+
+
+                </div>
+
+{% endblock %}

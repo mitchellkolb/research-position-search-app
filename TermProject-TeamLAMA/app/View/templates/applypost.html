@@ -1,0 +1,74 @@
+<table class="posttable" style="width:100%" valign="top">
+
+    <td colspan="3">
+        <div class="posttitle"> {{post.title}} </div>
+    </td>
+    </tr>
+    <tr>
+        <td width="10%">
+            <!--  (milestone1) TODO: include happiness-level image according to the `cost`s happiness_level .
+            For example : <img src="{{ url_for('static', filename = 'img//happiness-level-1.png' )}}"-->
+
+        </td>
+
+        <td width="80%">
+            <div>
+                <!-- (milestone1) TODO: include post body -->
+                {{post.researchDesc}}
+            </div>
+
+
+            <div>
+                <!-- (milestone1) TODO: include post body -->
+                {{post.requiredHours}} Hours a Week
+            </div>
+
+            <div>
+                Research Fields:
+                {%for fields in post.researchFields%}
+                {{fields}}
+                {%endfor%}
+            </div>
+
+
+            <div>
+                Start Date: {{ moment(post.startDate).format('LL') }}
+            </div>
+
+            <div>
+                End Date: {{ moment(post.endDate).format('LL') }}
+            </div>
+
+            <div>
+                Posted at: {{ moment(post.timestamp).format('LLL') }}
+            </div>
+
+            <div>
+                The post is created by:  <span class="useritem">{{post.facultyName}}
+            </div>
+
+            <div>
+                {% if current_user.isnotfaculty %}
+
+                    <form action="{{ url_for('routes.studentapply2', researchPos_id = post.id )}}" method="get">
+                        <input type="submit"  value="View Position" >
+                    </form>
+
+                {% else %}
+
+                {% if current_user.isfaculty %}
+                {% if post.faculty_id == current_user.id %}
+
+                    <form action="{{ url_for('routes.viewPosition', researchPos_id = post.id )}}" method="get">
+                        <input type="submit"  value="View Applicants" >
+                    </form>
+
+
+                {% endif %}
+                {% endif %}
+
+                {% endif %}
+            </div>
+
+        </td>
+</table>

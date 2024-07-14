@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\Controller",
+    "\\app\\Model",
+    "\\app\\View",
+    "\\app\\View\\static",
+    "\\app\\View\\static\\css",
+    "\\app\\View\\templates",
+    "\\tests"
+  ],
+  "SelectedNode": "\\app\\View\\templates\\base.html",
+  "PreviewInSolutionExplorer": false
+}

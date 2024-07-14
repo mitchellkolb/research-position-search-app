@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Student Main View</h1>
+    <h1>Welcome to Faculty SearchApp Portal!</h1>
+    <h2>Number of Available Positions:</h2>
+
+    <form action = "" method = "POST">
+        {{sortform.sort.label}}
+        <div>
+        {{sortform.sort(class="formselect")}}
+
+        {{sortform.submit(class="button")}}
+        </div>
+    </form>
+    <br> 
+
+
+
+            <div class="postlist">
+
+
+       {% for post in posts %} 
+            <div class = "post-box">
+                {% include 'applypost.html' %} 
+            </div>
+       {% endfor %}
+
+            </div>
+
+{% endblock %}
