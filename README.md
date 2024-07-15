@@ -50,15 +50,18 @@ The Research Position Search App is a web application designed to connect underg
    - [Student Interface](#student-interface)
    - [Faculty Interface](#faculty-interface)
 - [Technical Plan](#technical-plan)
-- [Continuous Integration](#continuous-integration)
+- [CI / CD](#ci--cd)
 - [Future Work](#future-work)
 - [Acknowledgments](#acknowledgments)
 
 ---
 
 # What I Learned in this Project
-- How to
-- Programming in 
+- How to develop a website while implementing the Model-View-Controller design pattern.
+- Building and deploying web applications using Python, Flask, and SQLite.
+- Implementing continuous integration and deployment with Selenium for automated testing.
+- Designing and developing user-friendly interfaces with HTML, CSS, and Flask templates.
+- Using Github Issues to distribute the work load to complete deliverables on time.
 
 
 
@@ -91,7 +94,7 @@ This project was implemented on our local machines on both windows and macOS:
 - Clone this repository 
 - Open terminal at the codebase `~.../research-position-search-app/TermProject-TeamLAMA/`
 - Use `pip install -r requirements.txt` to install all of the requirements.
-- Install SQLite
+- Install SQLite and configure your local instance in the config.py
 - Run the config.py and smile.py files to start the project.
 - The codebase will startup on your localhost
 
@@ -127,7 +130,7 @@ When working on this website our team used a Model-View-Controller (MVC) archite
 - **Selenium** for continuous integration and testing.
 
 
-## Continuous Integration
+## CI / CD
 In this project, Selenium was used for continuous integration and continuous deployment (CI/CD) testing. The automated tests ensure that:
 - All pages load correctly.
 - Forms accept and validate input as expected.
