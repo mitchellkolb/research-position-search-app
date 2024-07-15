@@ -26,7 +26,7 @@
     alt="Website Badge" />
 </p>
 
-This project is intended to showcase our knowledge learning about Neural Network Design by developing a
+The Research Position Search App is a web application designed to connect undergraduate students with faculty research opportunities. Students can create profiles, browse available positions, and apply for those that match their interests, while faculty can post and manage research opportunities.
 
 ![project image](resources/lama.gif)
 
@@ -46,7 +46,12 @@ This project is intended to showcase our knowledge learning about Neural Network
 - [Team / Contributors / Teachers](#team--contributors--teachers)
 - [How to Set Up](#how-to-set-up)
 - [Project Overview](#project-overview)
-- [References](#references)
+- [Project Details](#project-details)
+   - [Student Interface](#student-interface)
+   - [Faculty Interface](#faculty-interface)
+- [Technical Plan](#technical-plan)
+- [Continuous Integration](#continuous-integration)
+- [Future Work](#future-work)
 - [Acknowledgments](#acknowledgments)
 
 ---
@@ -94,49 +99,51 @@ This project was implemented on our local machines on both windows and macOS:
 
 
 
+
 # Project Overview
-This project utilizes 
-
-
+The Research Position Search App is a web application designed to connect undergraduate students with faculty members offering research positions. It enables students to create profiles, browse available research opportunities, and apply for positions that match their interests and qualifications. Faculty members can post research positions, review applications, and manage the hiring process. Our site aims to streamline the process of matching students with research opportunities, enabling greater engagement in academic research.
 
 ## Project Details
+The Research Position Search App provides two main interfaces: one for students and one for faculty members.
 
-### Introduction
-In this project, we apply 
+### Student Interface:
+- When a student creates an account they enter profile information including contact details, academic background, and research interests.
+- They can view open research positions and recommended positions based on their interests.
+- Apply for multiple research positions, submit statements of interest, and provide references on the positions.
+- Track the status of applications (Pending, Approved for Interview, Hired, Not Hired).
+- Withdraw applications if no longer interested.
 
+### Faculty Interface:
+- Create a faculty account and enter profile information.
+- Post research positions with details such as project goals, required qualifications, and time commitments.
+- View applications from students and access their academic and research backgrounds.
+- Update application statuses (Approved for Interview, Hired, Not Hired) and manage postings.
 
-### Literature Review
-In this we drew inspiration from various sources, including video tutorials online for 
-
-
-### Technical Plan
-The project employs a 
-
-
-### Implementation Details
-
-#### Files and Structure
-- `game.py`: Contains the racing game environment and controls the car's movement.
-> [!NOTE]
-> These files were 
-
-
-### Implementation
-In this project
-
-#### Results and Observations
-During development,
-<p float="left">
-  <img src="resources/image1.png" alt="First Try" width="300" />
-  <img src="resources/image2.png" alt="Final Try" width="307" />
-</p>
-
-#### Future Work
-Future improvements could include
+## Technical Plan
+When working on this website our team used a Model-View-Controller (MVC) architectural pattern to organize the codebase. The technologies used include:
+- **Python** and **Flask** for the backend.
+- **SQLite** for the database.
+- **HTML** and **CSS** for the frontend.
+- **Selenium** for continuous integration and testing.
 
 
+## Continuous Integration
+In this project, Selenium was used for continuous integration and continuous deployment (CI/CD) testing. The automated tests ensure that:
+- All pages load correctly.
+- Forms accept and validate input as expected.
+- User actions, such as logging in, applying for positions, and posting positions, perform as intended.
+- Application statuses update correctly and are reflected in the UI.
 
-## References
+## Future Work
+Future improvements could include:
+- Enhancing the recommendation algorithm for matching students to research positions.
+- Implementing a notification system to alert students and faculty of updates.
+- Adding a messaging system for direct communication between students and faculty.
+- Integrating more advanced search and filter options for both students and faculty.
+- Expanding the application to support multiple institutions.
+
+
+
 
 
 
