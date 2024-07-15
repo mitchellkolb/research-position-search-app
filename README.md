@@ -28,7 +28,7 @@
 
 This project is intended to showcase our knowledge learning about Neural Network Design by developing a
 
-![project image](resources/image1.png)
+![project image](resources/lama.gif)
 
 <details>
 <summary style="color:#5087dd">Watch the Full Video Demo Here</summary>
@@ -77,7 +77,7 @@ This project is intended to showcase our knowledge learning about Neural Network
 - [Albert Lipaev](https://github.com/Endeavour-Innovations-Inc)
 - Alex Castillo
 - Professor. Sakire Arslan Ay
-- Our Team Name: LAMA
+- Team Name: LAMA
 
 
 
