@@ -93,9 +93,15 @@ The Research Position Search App is a web application designed to connect underg
 This project was implemented on our local machines on both windows and macOS:
 - Clone this repository 
 - Open terminal at the codebase `~.../research-position-search-app/TermProject-TeamLAMA/`
-- Use `pip install -r requirements.txt` to install all of the requirements.
-- Install SQLite and configure your local instance in the config.py
-- Run the config.py and smile.py files to start the project.
+- Install all of the requirements with
+```zsh
+pip install -r requirements.txt
+```
+- Install SQLite and configure your local instance in the `config.py` file.
+- Run the config.py and smile.py files to start the project with
+```zsh
+python3 smile.py
+```
 - The codebase will startup on your localhost
 
 
